@@ -40,7 +40,7 @@ function extract_lib() {
 
 
 # Get headers
-ITEMS=("api-cpp" "core" "cci")
+ITEMS=("api-cpp" "core" "cci" "diagnostics")
 for item in "${ITEMS[@]}"
 do
     download_item ${item} headers
@@ -49,7 +49,7 @@ done
 
 
 # Get libraries
-ITEMS=("api-cpp" "core" "cci" "canutils" "platform-socketcan")
+ITEMS=("api-cpp" "core" "cci" "canutils" "diagnostics" "platform-socketcan")
 VARIANTS=("linuxjetsontxstatic")
 for item in "${ITEMS[@]}"
 do
